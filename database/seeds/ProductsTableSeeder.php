@@ -17,6 +17,7 @@ class ProductsTableSeeder extends Seeder
             'description' => 'description goes here',
             'price' => 399.99,
             'image' => 'ps4.jpg',
+            'product_type' => '2'
         ]);
 
         DB::table('products')->insert([
@@ -25,6 +26,7 @@ class ProductsTableSeeder extends Seeder
             'description' => 'description goes here',
             'price' => 449.99,
             'image' => 'xbox-one.jpg',
+            'product_type' => '2'
         ]);
 
         DB::table('products')->insert([
@@ -33,6 +35,7 @@ class ProductsTableSeeder extends Seeder
             'description' => 'description goes here',
             'price' => 2299.99,
             'image' => 'macbook-pro.jpg',
+            'product_type' => '2'
         ]);
 
         DB::table('products')->insert([
@@ -41,6 +44,7 @@ class ProductsTableSeeder extends Seeder
             'description' => 'description goes here',
             'price' => 799.99,
             'image' => 'ipad-retina.jpg',
+            'product_type' => '1'
         ]);
 
         DB::table('products')->insert([
@@ -49,6 +53,7 @@ class ProductsTableSeeder extends Seeder
             'description' => 'description goes here',
             'price' => 699.99,
             'image' => 'acoustic.jpg',
+            'product_type' => '2'
         ]);
         DB::table('products')->insert([
             'name' => 'Electric Guitar',
@@ -56,6 +61,7 @@ class ProductsTableSeeder extends Seeder
             'description' => 'description goes here',
             'price' => 899.99,
             'image' => 'electric.jpg',
+            'product_type' => '2'
         ]);
 
         DB::table('products')->insert([
@@ -64,6 +70,7 @@ class ProductsTableSeeder extends Seeder
             'description' => 'description goes here',
             'price' => 99.99,
             'image' => 'headphones.jpg',
+            'product_type' => '1'
         ]);
 
         DB::table('products')->insert([
@@ -72,6 +79,7 @@ class ProductsTableSeeder extends Seeder
             'description' => 'description goes here',
             'price' => 499.99,
             'image' => 'speakers.jpg',
+            'product_type' => '2'
         ]);
     }
 }

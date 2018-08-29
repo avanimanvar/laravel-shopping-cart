@@ -4,7 +4,9 @@ Route::get('/', function () {
     return redirect('shop');
 });
 
+
 Route::resource('shop', 'ProductController', ['only' => ['index', 'show']]);
+Route::get('add-product', 'ProductController@add');
 
 Route::resource('cart', 'CartController');
 Route::delete('emptyCart', 'CartController@emptyCart');

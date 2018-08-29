@@ -5,6 +5,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateProductsTable extends Migration
 {
+
     /**
      * Run the migrations.
      *
@@ -19,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->text('description');
             $table->decimal('price', 10, 2);
             $table->string('image')->unique();
+            $table->enum('product_type', ['1', '2'])->comment = "1-free, 2-not free";
             $table->timestamps();
         });
     }
