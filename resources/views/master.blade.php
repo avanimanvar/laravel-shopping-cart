@@ -61,9 +61,6 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="{{ set_active('shop') }}"><a href="{{ url('/') }}">Home/Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li class="{{ set_active('wishlist') }}"><a href="{{ url('/wishlist') }}">Wishlist ({{ Cart::instance('wishlist')->count(false) }})</a></li>
@@ -77,11 +74,7 @@
 
     @yield('content')
 
-    <footer>
-      <div class="container">
-        <p class="text-muted">By <a href="http://andremadarang.com">Andre Madarang</a></p>
-      </div>
-    </footer>
+    <footer></footer>
 
 <!-- JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

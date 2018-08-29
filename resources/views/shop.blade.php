@@ -18,12 +18,7 @@
 
         <div class="jumbotron text-center clearfix">
             <h2>Laravel Shopping Cart Example</h2>
-            <p>An example Laravel App that demos the basic functionality of a typical e-commerce shopping cart.</p>
-            <p>
-                <a href="http://andremadarang.com/implementing-a-shopping-cart-in-laravel/" class="btn btn-primary btn-lg" target="_blank">Blog Post</a>
-                <a href="https://github.com/drehimself/laravel-shopping-cart-example" class="btn btn-success btn-lg" target="_blank">GitHub Repo</a>
-            </p>
-        </div> <!-- end jumbotron -->
+        </div>
 
         @foreach ($products->chunk(4) as $items)
             <div class="row">
